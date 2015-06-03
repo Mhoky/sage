@@ -1,0 +1,85 @@
+.bgcolor {
+  background-color: $bg-color;
+}
+
+.titre {
+  margin: 20px 0;
+}
+
+header.banner {
+  box-shadow: 0 2px 17px #262626;
+
+  ul {
+    max-width: 900px;
+    margin: auto;
+
+  }
+}
+
+.brand {
+  font-size: 100px;
+  color: white;
+  text-decoration: none;
+  font-family: 'permanent marker';
+  margin-bottom: 7px;
+}
+
+.brand:hover {
+  color: white;
+}
+
+
+header.banner nav > div > ul > li {
+  float: left;
+  width: 20%;
+  color: white;
+  font-size: 25px;
+  font-family: 'Rancho';
+  border-radius: 10px 10px 0 0;
+
+  & > a {
+    color: white;
+    transition: color 0.3s, background 0.3s;
+    border-radius: 10px 10px 0 0;
+
+    &:hover {
+      color: $bg-color;
+      background-color: aliceblue;
+    }
+  }
+
+    &:hover {
+      background-color: aliceblue;
+      box-shadow: 0 2px 17px #262626;
+
+      & > a {
+        color: $bg-color;
+      }
+    }
+
+  .sub-menu {
+    position: absolute;
+    top: 100%;
+    width:100%;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    max-height: 0;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+  }
+
+  &:hover .sub-menu,
+  .sub-menu:hover {
+    max-height: 200px;
+    background-color: $bg-color;
+    transition: max-height 1.2s ease-out;
+
+    a {
+    color: white;
+    }
+  }
+}
+
+
