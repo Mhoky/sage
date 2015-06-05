@@ -16,17 +16,3 @@
   <?php the_posts_navigation(); ?>
 
 </div>
-<style type="text/css">
-
-<?php
-    $image = get_post_meta($post->ID, 'bg', true);
-    $titlecolor = get_post_meta($post->ID, 'titleColor', true);
-    $bgcolor = get_post_meta($post->ID, 'bgcolor', true);
-?>
-
-.index {
-    background-color: <?php echo $bgcolor ?>;
-    background-image: url('<?php sage('stylesheet_directory'); ?>/<?php echo $image ?>');
-}
-
-</style>

@@ -24,7 +24,7 @@ header.banner {
   margin-bottom: 7px;
 }
 
-.brand:hover {
+.brand:hover, .brand:visited, .brand:focus {
   color: white;
 }
 

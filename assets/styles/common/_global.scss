@@ -3,7 +3,7 @@ a {
   color: $brand-primary;
 }
 
-a:hover {
+a:hover,a:visited,a:focus {
   color: $brand-primary;
   text-decoration: none;
 
